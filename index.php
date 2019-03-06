@@ -46,13 +46,34 @@ $logar->login("user","1232QEQW");
 echo $logar;
 */
 
+/* realiza um insert com os dados entre parenteses
 
+$aluno = new Usuario("Aluno2", "qwerty");
 
+$aluno->insert();
 
+echo $aluno;
 
+*/
 
+/* update (verificar, pois não funcionou)
 
+$usuario = new Usuario();
 
+$usuario->loadbyId(6);
+
+$usuario->update("prof", "asdf");
+
+echo $usuario;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadbyId(3);
+
+$usuario->delete();
+
+echo $usuario;
 
 
 
